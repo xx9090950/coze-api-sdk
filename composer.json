@@ -1,0 +1,32 @@
+{
+    "name": "gongruixiang/coze-api-sdk",
+    "description": "方便快捷的调用coze的API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gongruixiang\\CozeApiSdk\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "gongruixiang",
+            "email": "xx9090950@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=7.3.0",
+        "guzzlehttp/guzzle": "^7.8",
+        "firebase/php-jwt": "^5.0",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.6"
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "Gongruixiang\\CozeApiSdk\\scripts\\post-install-cmd.php"
+        ]
+    }
+}
