@@ -4,9 +4,14 @@ namespace Gongruixiang\CozeApiSdk\proxy\auth;
 
 class PersonalToken implements Authorization
 {
+    private $config;
+    public function __construct(Config $config)
+    {
+        $this->config=$config;
+    }
 
     public function getAuthHeader(): string
     {
-        return config('coze.token');
+        return $this->config->getPersonalToken();
     }
 }

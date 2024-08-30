@@ -1,0 +1,4 @@
+.phpunit.result.cache
+/vendor
+/composer.lock
+/tests/private_key.pem
